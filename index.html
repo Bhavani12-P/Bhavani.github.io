@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puppam Bhavani Chandrika | CSE Portfolio</title>
+<title>Your Name | CSE Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,7 +25,7 @@
     font-size: 15px;
   }
   .mono { font-family: 'Fira Code', monospace; }
- 
+
   /* NAV */
   nav {
     display: flex; justify-content: space-between; align-items: center;
@@ -47,7 +47,7 @@
     text-decoration: none; transition: opacity 0.2s;
   }
   .nav-cta:hover { opacity: 0.85; }
- 
+
   /* HERO */
   .hero { padding: 96px 48px 80px; max-width: 960px; }
   .hero-badge {
@@ -88,7 +88,7 @@
     display: inline-block;
   }
   .btn-outline:hover { border-color: var(--muted); background: var(--surface); }
- 
+
   /* STATS */
   .stats {
     display: flex; gap: 48px; flex-wrap: wrap;
@@ -104,7 +104,7 @@
     font-size: 12px; color: var(--muted);
     text-transform: uppercase; letter-spacing: 1px; margin-top: 2px;
   }
- 
+
   /* SECTIONS */
   section { padding: 80px 48px; }
   .section-label {
@@ -116,7 +116,7 @@
     font-size: clamp(28px, 4vw, 38px);
     font-weight: 700; letter-spacing: -1px; margin-bottom: 48px;
   }
- 
+
   /* SKILLS */
   .skills-grid {
     display: grid;
@@ -137,7 +137,7 @@
     height: 100%; border-radius: 4px;
     background: linear-gradient(90deg, var(--accent), var(--accent2));
   }
- 
+
   /* PROJECTS */
   .projects-grid {
     display: grid;
@@ -175,7 +175,7 @@
     transition: color 0.2s, border-color 0.2s;
   }
   .project-link:hover { color: var(--accent2); border-color: var(--accent2); }
- 
+
   /* ABOUT */
   .about-grid {
     display: grid; grid-template-columns: 1fr 1.4fr;
@@ -199,7 +199,7 @@
   .edu-line .sub { color: var(--muted); font-size: 12px; display: block; margin-top: 2px; }
   .about-text h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
   .about-text p { color: var(--muted); line-height: 1.9; margin-bottom: 16px; font-size: 14px; }
- 
+
   /* CONTACT */
   .contact-box {
     background: var(--card); border: 1px solid var(--border);
@@ -217,13 +217,31 @@
     transition: border-color 0.2s, background 0.2s;
   }
   .contact-link:hover { border-color: var(--accent); background: rgba(108,99,255,0.08); }
- 
+
   /* FOOTER */
   footer {
     text-align: center; padding: 32px; border-top: 1px solid var(--border);
     font-size: 13px; color: var(--muted);
   }
- 
+
+  /* TYPING ANIMATION */
+  .typed-name {
+    color: var(--accent);
+    border-right: 3px solid var(--accent);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: cursor-blink 0.75s step-end infinite;
+  }
+  .typed-name.done {
+    border-right-color: transparent;
+    animation: none;
+  }
+  @keyframes cursor-blink {
+    0%, 100% { border-right-color: var(--accent); }
+    50% { border-right-color: transparent; }
+  }
+
   /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
@@ -237,7 +255,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav>
   <div class="logo">your<span>.</span>dev</div>
@@ -249,15 +267,15 @@
   </ul>
   <a href="#contact" class="nav-cta">Hire Me</a>
 </nav>
- 
+
 <!-- HERO -->
 <div class="hero">
   <div class="hero-badge">
     <span class="dot"></span>
     Open to opportunities · Hyderabad, India
   </div>
-<h1>Hi, I'm <span class="typed-name" id="typed-name"</span><br>CSE Graduate & Data Enthusiast</h1>
- <p class="hero-sub">
+  <h1>Hi, I'm <span class="typed-name" id="typed-name"></span><br>CSE Graduate & Data Enthusiast</h1>
+  <p class="hero-sub">
     B.Tech in Computer Science Engineering. Passionate about turning raw data
     into meaningful insights using <strong>Python & SQL</strong>.
     Building things that solve real problems.
@@ -267,7 +285,7 @@
     <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
   </div>
 </div>
- 
+
 <!-- STATS -->
 <div class="stats">
   <div class="stat-item">
@@ -279,7 +297,7 @@
     <span class="stat-label">Internships</span>
   </div>
   <div class="stat-item">
-    <span class="stat-num">7<span class="accent">.8</span></span>
+    <span class="stat-num">8<span class="accent">.2</span></span>
     <span class="stat-label">CGPA</span>
   </div>
   <div class="stat-item">
@@ -287,7 +305,7 @@
     <span class="stat-label">Graduating Year</span>
   </div>
 </div>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <p class="section-label">What I Know</p>
@@ -331,13 +349,13 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects" style="background: var(--surface);">
   <p class="section-label">What I've Built</p>
   <h2 class="section-title">Featured Projects</h2>
   <div class="projects-grid">
- 
+
     <div class="project-card">
       <span class="project-tag">Data Analysis</span>
       <div class="project-title">Sales Dashboard Analysis</div>
@@ -357,7 +375,7 @@
         <a href="#" class="project-link">Live Demo →</a>
       </div>
     </div>
- 
+
     <div class="project-card">
       <span class="project-tag">Database</span>
       <div class="project-title">Student Management System</div>
@@ -375,7 +393,7 @@
         <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">GitHub →</a>
       </div>
     </div>
- 
+
     <div class="project-card">
       <span class="project-tag">Automation</span>
       <div class="project-title">Web Scraper & Price Tracker</div>
@@ -394,35 +412,35 @@
         <a href="https://github.com/yourusername/project3" class="project-link" target="_blank">GitHub →</a>
       </div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section id="about">
   <p class="section-label">Who I Am</p>
   <h2 class="section-title">About Me</h2>
   <div class="about-grid">
     <div class="about-visual">
-      <div class="avatar-ring">PBC</div>
-      <div class="about-name">Puppam Bhavani Chandrika</div>
-      <div class="about-role">B.Tech CSE-AI Graduate · 2025</div>
+      <div class="avatar-ring">YN</div>
+      <div class="about-name">Your Name</div>
+      <div class="about-role">B.Tech CSE Graduate · 2025</div>
       <hr class="divider">
       <div class="edu-line">
-        🎓 B.Tech — Computer Science & Engineering(Artificial Intelligence)
-        <span class="sub">GATES INSTITUTE OF TECHNOLOGY · 2021–2025 · CGPA: 7.8</span>
+        🎓 B.Tech — Computer Science & Engineering
+        <span class="sub">XYZ University · 2021–2025 · CGPA: 8.2</span>
       </div>
       <div class="edu-line" style="margin-top:14px">
         📍 Hyderabad, Telangana, India
       </div>
       <div class="edu-line">
-        💼 Open to full-time 
+        💼 Open to full-time &amp; internship roles
       </div>
       <div class="edu-line">
         🌐 Open to remote &amp; on-site positions
       </div>
     </div>
- 
+
     <div class="about-text">
       <h3>Building with data, one query at a time.</h3>
       <p>
@@ -448,7 +466,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-box">
@@ -459,18 +477,33 @@
       Let's connect!
     </p>
     <div class="contact-links">
-      <a href="mailto:bhavanipuppam@gmail.com" class="contact-link">📧 Email Me</a>
-      <a href="https://linkedin.com/in/bhavanipuppam" class="contact-link" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/Bhavani12-P" class="contact-link" target="_blank">🐙 GitHub</a>
+      <a href="mailto:you@email.com" class="contact-link">📧 Email Me</a>
+      <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/yourusername" class="contact-link" target="_blank">🐙 GitHub</a>
       <a href="resume.pdf" class="contact-link" download>📄 Resume</a>
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
-  <p>Designed & Built by <strong>Puppam Bhavani Chandrika</strong> · B.Tech CSE 2025 · Hyderabad, India</p>
+  <p>Designed & Built by <strong>Your Name</strong> · B.Tech CSE 2025 · Hyderabad, India</p>
 </footer>
- 
+
+<script>
+  const nameEl = document.getElementById('typed-name');
+  const fullName = 'Your Name'; // ← Change this to your real name
+  let i = 0;
+  function type() {
+    if (i <= fullName.length) {
+      nameEl.textContent = fullName.slice(0, i);
+      i++;
+      setTimeout(type, i === 1 ? 600 : 100);
+    } else {
+      nameEl.classList.add('done');
+    }
+  }
+  window.addEventListener('load', () => setTimeout(type, 400));
+</script>
 </body>
 </html>
